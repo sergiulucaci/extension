@@ -1,0 +1,45 @@
+<!doctype html>
+<!--
+This page is shown when the extension button is clicked, because the
+"browser_action" field in manifest.json contains the "default_popup" key with
+value "index.html".
+-->
+<html>
+    <head>
+        <title>firstExtension</title>
+        <title>draggin</title>
+        <link rel="stylesheet" href="third/css/bootstrap.min.css">
+        <link rel="stylesheet" href="third/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="third/jquery-1.11.3.js"></script>
+        <script src="script.js"></script>
+        <!--<script src="popup.js"></script>-->
+    </head>
+    <body>
+        <div id="status">
+            <div class="content">
+                <div class="welcomePage">
+                    <h3>Welcome!</h3>
+                    <br><br><br>
+                    <button type="button" class="btn btn-lg btn-default" id="joinLink">join linkFlow</button>
+                </div>
+                <div class="signUpPage">
+                    <h3>Sharing with your team</h3>
+                    <br>
+                    <div class="row">
+                        <div class="col-xs-6 col-xs-offset-3">
+                            <input type="text" class="form-control" placeholder="Email" id="emailAddress">
+                            <p class="errorInput" id="errorInputEmail">Type a valid email address.</p>
+                            <input type="password" class="form-control top" placeholder="Password" id="emailPassword">
+                            <p class="errorInput" id="errorInputPassword">
+                                Your password must be at least three characters.</p>
+                        </div>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-default" id="registerButton">Register</button>
+                </div>
+            </div>
+        </div>
+        <img id="image-result" hidden>
+    </body>
+</html>

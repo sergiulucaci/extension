@@ -1,0 +1,42 @@
+/* Change blue textarea */
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+
+/* Status id */
+#status {
+    width: 500px;
+    height: 430px;
+    max-width: 700px;
+}
+
+.content {
+    text-align: center;
+    margin-top: 170px;
+}
+
+/* Sing up page */
+.signUpPage {
+    display: none;
+}
+
+.top {
+    margin-top: 6px;
+}
+
+.errorInput {
+    display: none;
+    color: red;
+    margin-top: -2px;
+    font-size: 10px;
+}

@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+
+  "name": "Getting started example",
+  "description": "This extension shows a Google Image search result for the current page",
+  "background": {
+    "scripts": ["third/jquery-1.11.3.js","script.js"],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/"],
+      "js": [
+        "third/jquery-1.11.3.js",
+        "script.js"],
+      "run_at" : "document_start"
+    }
+  ],
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "index.html",
+    "default_title": "do not dare to click here!"
+  },
+  "permissions": [
+    "tabs",
+    "management",
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ],
+  "web_accessible_resources": [
+    "/*"
+  ]
+}
